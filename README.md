@@ -19,12 +19,17 @@ In European Conference on Computer Vision (ECCV) 2022
 
 ## Installation
 
-- Python 3
+Follow ```requirements.txt``` to setup the environment.
 - [PyTorch](https://pytorch.org)
 - [PyTorch3D](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md)
 
 ## Preparation
 
-## Training and Evaluation
+1. Prepare PASCAL3D+ with ```./prepare_data.sh```.
 
-## Pretrained Model Weights
+## Demo
+
+6D pose estimation with multi-object reasoning:
+```sh
+CUDA_VISIBLE_DEVICES=0 python3 demo.py
+```

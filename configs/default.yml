@@ -1,0 +1,56 @@
+image_h: 320
+image_w: 448
+model_parameters:
+  backbone: resnetext
+  down_sample_rate: 8
+  d_features: 128
+  max_group: 512
+  local_size: 1
+  adj_momentum: 0.0
+rendering_parameters:
+  blur_radius: 0.0
+  num_faces: 1
+  gamma: 0.0
+  mode: bilinear
+optimization_parameters:
+  epochs: 300
+  lr: 0.05
+  azimuth_sample: 24
+  elevation_sample: 6
+  theta_sample: 6
+  distance_sample: 9
+  px_sample: 12
+  py_sample: 12
+  adam_beta_0: 0.4
+  adam_beta_1: 0.6
+pascal3dp_parameters:
+  root_path: data/PASCAL3D+_release1.1
+  img_path: Images
+  anno_path: Annotations
+  list_file: Image_sets
+  image_h: 320
+  image_w: 448
+training_parameters:
+  seed: 42
+  epochs: 2000
+  log_ckpt_epochs: 1
+  save_ckpt_epochs: 200
+  batch_size: 48
+  workers: 16
+  lr: 0.0002
+  update_lr_ratio: 0.2
+  update_lr_epoch: 1400
+  momentum: 0.92
+  weight_decay: 0.0001
+  train_accumulate: 20
+  distance_thr: 48
+  weight_noise: 0.005
+  num_noise: 5
+  T: 0.07
+  max_group: 512
+  adj_momentum: 0.96
+  train_img_path: /mnt/sdd/wufei/imagenet_with_dtd/train/images
+  train_anno_path: /mnt/sdd/wufei/imagenet_with_dtd/train/annotations3D_single
+  train_list_path: /mnt/sdd/wufei/imagenet_with_dtd/train/lists3D_single
+  max_width_translate: 0.5
+  max_height_translate: 0.5

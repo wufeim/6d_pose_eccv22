@@ -31,5 +31,5 @@ Follow ```requirements.txt``` to setup the environment.
 
 6D pose estimation with multi-object reasoning:
 ```sh
-CUDA_VISIBLE_DEVICES=0 python3 demo.py
+CUDA_VISIBLE_DEVICES=0 python3 tools/demo.py
 ```
